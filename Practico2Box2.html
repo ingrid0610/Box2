@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Práctico 2</title>
+    <style>
+      body {
+        height: 2000px;
+        background-color: rgb(255, 255, 255);
+        font-family: Arial, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .contenedor {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background-color: rgb(237, 246, 255);
+      }
+
+      .box {
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        line-height: 120px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+      }
+
+      .static {
+        background-color: lightblue;
+        position: static;
+      }
+
+      .relative {
+        background-color: lightgreen;
+        position: relative;
+        top: 20px;
+        left: 30px;
+      }
+
+      .absolute {
+        background-color: lightcoral;
+        position: absolute;
+        top: 50px;
+        right: 40px;
+      }
+
+      .sticky {
+        background-color: teal;
+        color: white;
+        position: sticky;
+        top: 0;
+      }
+
+      .fixed {
+        background-color: khaki;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>clases div:</h2>
+
+    <div class="contenedor">
+      <div class="box static">Static</div>
+      <div class="box relative">Relative</div>
+      <div class="box absolute">Absolute</div>
+      <div class="box sticky">Sticky</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+  </body>
+</html>
